@@ -5,7 +5,8 @@ MAINTAINER "Jeremy CURNY" <jeremy.curny.pro@gmail.com>
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN \
-  apt-get install -y \
+  apt-get update \
+  && apt-get install -y \
     libfreetype6-dev libicu-dev libjpeg62-turbo-dev libmcrypt-dev libpng-dev libxml2-dev libxslt-dev
     
 RUN \
